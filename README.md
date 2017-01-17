@@ -34,12 +34,22 @@ $ git push --set-upstream origin team_name-branch
    * Select as "base fork" the "cmallorca/string-calculator-dojo" master branch
    * Select as "head fork" your "your_name/string-calculator-dojo" team_name branch 
 
-## Extra challenges for home
-* Allow any aritmethic operation (+, -, *, /)
+## Extra challenges
+* Allow any aritmethic operation with  (+, -, *, /). Change Add method for Process
 ```
-- public int Add(string numbers)
-- public int Minus(string numbers)
-- public int Multiply(string numbers)
-- public int Divide(string numbers)
+- public int Process(string numbers)
+
+(-)1,2,3 = 6
+
+(-)//[**][%%]\n1%%2**3 = 6
+
 ```
+* Use * as default operation if not given
+```
+2,3,2 = 12
+(+)2,3,2 = 7
+//[**][%%]\n2%%2**3 = 12
+(-)//[**][%%]\n2%%2**3 = -3
+```
+* Continue with part 2 http://osherove.com/tdd-kata-2/ (Services, Moq, Stubs, etc)
 * Try to reduce the cost of your solution to O(n + d) where n = numbers and d = delimiters for any arithmetic operation
