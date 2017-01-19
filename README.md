@@ -25,7 +25,7 @@ String Calculator Coding Dojo
 9. make sure you can also handle multiple delimiters with length longer than one char
 
 
-## Solutions:
+## Solutions
 Please, perform a pull request over this repository to add your team solution:
 * Fork the repository to your github account.
 * Clone the forked repository:
@@ -75,5 +75,5 @@ $ git push --set-upstream origin team_name-branch
 //[**][%%]\n2%%2**3 = 12
 (-)//[**][%%]\n2%%2**3 = -3
 ```
-* Continue with part 2 http://osherove.com/tdd-kata-2/ (Services, Moq, Stubs, etc)
+* Continue with [String Calculator Part 2](http://osherove.com/tdd-kata-2/) (Services, Moq, Stubs, etc)
 * Try to reduce the cost of your solution to O(n + d) where n = numbers and d = delimiters for any arithmetic operation
