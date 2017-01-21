@@ -59,21 +59,47 @@ $ git push --set-upstream origin team_name-branch
    * Select as "head fork" your "your_name/string-calculator-dojo" team_name branch 
 
 ## Extra challenges
-* Allow any aritmethic operation by using given sign (+|-|*|/). Use a new method:
-```
-- public int Process(string numbers)
-
-(+)1,2,3 = 6
-
-(+)//[**][%%]\n1%%2**3 = 6
-
-```
-* Use * as default operation if not given
-```
-2,3,2 = 12
-(+)2,3,2 = 7
-//[**][%%]\n2%%2**3 = 12
-(-)//[**][%%]\n2%%2**3 = -3
-```
+* Allow any arithmetic operation by public methods
+ * Subtract with method int Subtract(string numbers):
+ ```
+ 1,2,3 = -4
+ //[**][%%]\n1%%2**3 = -4
+ ```
+ * Multiply with method int Multiply(string numbers):
+ ```
+ 1,2,3 = 6
+ //[**][%%]\n1%%2**3 = 6
+ ```
+ * Divide with method int Divide(string numbers):
+ ```
+ 1,2,3 = 0
+ //[**][%%]\n10%%5**2 = 1
+ ```
+* Allow any aritmethic operation by using given sign. Use a new method int Process(string numbers):
+ * Add with sign (-):
+ ```
+ (+)1,2,3 = 6
+ (+)//[**][%%]\n1%%2**3 = 6
+ ```
+ * Subtract with sign (-):
+ ```
+ (-)1,2,3 = -4
+ (-)//[**][%%]\n1%%2**3 = -4
+ ```
+ * Multiply with sign (*):
+ ```
+ (*)1,2,3 = 6
+ (*)//[**][%%]\n1%%2**3 = 6
+ ```
+ * Divide with sign (/):
+  ```
+ (/)1,2,3 = 0
+ (/)//[**][%%]\n10%%5**2 = 1
+ ```
+ * Use (+) as default sign if not given in Process method. 
+ ```
+ 2,3,2 = 12
+ //[**][%%]\n2%%2**3 = 12
+ ```
 * Continue with [String Calculator Part 2](http://osherove.com/tdd-kata-2/) (Services, Moq, Stubs, etc)
 * Try to reduce the cost of your solution to O(n + d) where n = numbers and d = delimiters for any arithmetic operation
