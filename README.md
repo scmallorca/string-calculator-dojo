@@ -59,13 +59,13 @@ $ git push --set-upstream origin team_name-branch
    * Select as "head fork" your "your_name/string-calculator-dojo" team_name branch 
 
 ## Extra challenges
-* Allow any aritmethic operation with  (+, -, *, /). Change Add method for Process
+* Allow any aritmethic operation by using given sign (+|-|*|/). Use a new method:
 ```
 - public int Process(string numbers)
 
-(-)1,2,3 = 6
+(+)1,2,3 = 6
 
-(-)//[**][%%]\n1%%2**3 = 6
+(+)//[**][%%]\n1%%2**3 = 6
 
 ```
 * Use * as default operation if not given
